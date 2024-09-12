@@ -1,0 +1,65 @@
+Common Endpoints
+/actuator/health
+Provides information about the application’s health.
+Example: http://localhost:8080/actuator/health
+
+/actuator/info
+Displays arbitrary application info (can be customized via application.properties).
+Example: http://localhost:8080/actuator/info
+
+/actuator/env
+Shows properties from the Spring Environment (e.g., configuration properties).
+Example: http://localhost:8080/actuator/env
+
+/actuator/beans
+Shows all Spring beans in your application’s context.
+Example: http://localhost:8080/actuator/beans
+
+/actuator/metrics
+Shows metrics data (e.g., memory usage, CPU usage).
+Example: http://localhost:8080/actuator/metrics
+
+/actuator/metrics/{name}
+View specific metrics data by name (e.g., http.server.requests).
+Example: http://localhost:8080/actuator/metrics/jvm.memory.used
+
+/actuator/mappings
+Shows the HTTP request mappings in the application.
+Example: http://localhost:8080/actuator/mappings
+
+/actuator/loggers
+Shows and configures the log levels of the application.
+Example: http://localhost:8080/actuator/loggers
+
+/actuator/threaddump
+Provides a thread dump from the JVM.
+Example: http://localhost:8080/actuator/threaddump
+
+/actuator/httptrace
+Shows HTTP trace information (recent HTTP request/response exchanges).
+Example: http://localhost:8080/actuator/httptrace
+
+/actuator/auditevents
+Displays audit events (if auditing is enabled).
+Example: http://localhost:8080/actuator/auditevents
+
+/actuator/scheduledtasks
+Shows the scheduled tasks running in the application.
+Example: http://localhost:8080/actuator/scheduledtasks
+
+/actuator/caches
+Displays caches in the application.
+Example: http://localhost:8080/actuator/caches
+
+/actuator/conditions
+Shows the outcome of conditional beans and autoconfiguration.
+Example: http://localhost:8080/actuator/conditions
+
+/actuator/configprops
+Shows all @ConfigurationProperties beans.
+Example: http://localhost:8080/actuator/configprops
+
+/actuator/shutdown
+Gracefully shuts down the application. Disabled by default.
+To enable: management.endpoint.shutdown.enabled=true
+Example: http://localhost:8080/actuator/shutdown
