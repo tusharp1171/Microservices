@@ -1,4 +1,4 @@
-KAFKA
+**KAFKA**
 Navigate to Kafka Directory --- cd path\to\kafka
 Start Zookeeper Server -- .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 Start Kafka Server -- .\bin\windows\kafka-server-start.bat .\config\server.properties
